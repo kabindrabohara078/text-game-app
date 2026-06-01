@@ -19,13 +19,15 @@ const Input = (props) => {
             <div className='app-main-input'
                 style={{
                     backgroundColor: props.mode ? '#555' : 'white',
+                    color:'gray'
                 }}
             >
                 <div className="input-main">
                     <textarea placeholder='Enter any text' style={{
                         backgroundColor: props.mode ? '#777' : 'white', 
                         color: props.mode ? 'white' : 'gray',
-                        borderRadius: '5px', border: !props.mode ? '1px solid black' : '1px solid white', color: props.mode ? 'white' : 'black', fontSize: `${fs.current}px`
+                        borderRadius: '5px', border: !props.mode ? '1px solid black' : '1px solid white',
+                        fontSize: `${fs.current}px`
 
                     }} className='input-box' type="text" />
                 </div>
